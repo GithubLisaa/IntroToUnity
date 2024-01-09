@@ -148,4 +148,46 @@ public class MyTests : MonoBehaviour
     }
 
     // line, square, cone, circle :)
+
+
+    // get neighbors
+    private GameObject GetUpTile(int pTileIndex)
+    {
+        // TODO
+        return null;
+    }
+
+    private GameObject GetDownTile(int pTileIndex)
+    {
+        // TODO
+        return null;
+    }
+
+    private GameObject GetLeftTile(int pTileIndex)
+    {
+        // TODO
+        return null;
+    }
+
+    private GameObject GetRightTile(int pTileIndex)
+    {
+        // TODO
+        return null;
+    }
+
+    private List<GameObject> GetNeighbors(int pTileIndex, bool pDiagnals = false)
+    {
+        List<GameObject> lNeighbors = new List<GameObject>();
+        if (pDiagnals)
+        {
+
+        }
+        else
+        {
+
+        }
+
+        // TODO
+        return lNeighbors;
+    }
 }
