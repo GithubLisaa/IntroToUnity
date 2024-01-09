@@ -25,8 +25,10 @@ public class MyTests : MonoBehaviour
             {
                 GameObject tile;
 
+                // si la colonne est paire
                 if (col % 2 == 0)
                 {
+                    // si la ligne est paire
                     if (lig % 2 == 0)
                     {
                         tile = Instantiate(ChessTileVisualBlack, new Vector3(col, 0, lig), Quaternion.identity);
@@ -38,6 +40,8 @@ public class MyTests : MonoBehaviour
                 }
                 else
                 {
+                    // sinon
+                    // si la ligne est paire
                     if (lig % 2 == 0)
                     {
                         tile = Instantiate(ChessTileVisualWhite, new Vector3(col, 0, lig), Quaternion.identity);
@@ -48,7 +52,7 @@ public class MyTests : MonoBehaviour
                     }
                 }
 
-                // ajoute la tuile nouvellement créee dans une liste
+                // ajoute la nouvelle tuile dans la liste
                 _tiles.Add(tile);
             }
         }
