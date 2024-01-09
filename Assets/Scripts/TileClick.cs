@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class TileClick : MonoBehaviour
+// 1/ ajouter un event system dans la scene si il n'y en a pas deja un
+// 2/ ajouter un graphic raycaster sur la camera
+// 3/ ajouter l'interface IpoinerClickHandler
+// 4/ implementer la fonction OnPointerClick
+
+public class TileClick : MonoBehaviour, IPointerClickHandler
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("Tile clicked!");
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2046393172182833146}
   - component: {fileID: 1793599334351180743}
   - component: {fileID: 8635542206044643858}
+  - component: {fileID: 1065969392517503777}
   m_Layer: 0
   m_Name: BlackTile
   m_TagString: Untagged
@@ -106,3 +107,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1065969392517503777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8392005947944701070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f422325b41a65c14d9674b262e6e3b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
