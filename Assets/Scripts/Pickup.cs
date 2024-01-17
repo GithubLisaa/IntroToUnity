@@ -1,7 +1,5 @@
 using Cinemachine;
 using UnityEngine;
-using UnityEngine.EventSystems;
-
 
 [SelectionBase]
 public class Pickup : MonoBehaviour
@@ -11,6 +9,26 @@ public class Pickup : MonoBehaviour
     public float RotationSpeed = 20.0f;
     public GameObject ItemPrefb;
     public CinemachineVirtualCamera VirtualCamera;
+    private Hud _hud;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // place l'objet en utilisant la data de l'objet
+        //transform.position = ItemData.ItemPosition;
+
+        //Mesh myMesh = Instantiate(ItemData.ItemMeshFilter);
+        //GetComponent<MeshFilter>().sharedMesh = myMesh;        
+
+        //_hud = GameObject.FindGameObjectWithTag("Hud")?.GetComponent<Hud>();
+        _hud = FindObjectOfType<Hud>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        ItemPrefb.transform.RotateAround(transform.position, Vector3.up, RotationSpeed * Time.deltaTime);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,23 +40,13 @@ public class Pickup : MonoBehaviour
             Instantiate(ParticleSystem, transform.position, Quaternion.identity);
 
             //VirtualCamera.enabled = false;
+
+            //if (_hud != null)
+            //{
+            //    _hud.UpdateScore(1);
+            //}
+
+            _hud?.UpdateScore(ItemData.ItemScore);
         }
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // place l'objet en utilisant la data de l'objet
-        //transform.position = ItemData.ItemPosition;
-        
-        //Mesh myMesh = Instantiate(ItemData.ItemMeshFilter);
-        //GetComponent<MeshFilter>().sharedMesh = myMesh;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        ItemPrefb.transform.RotateAround(transform.position, Vector3.up, RotationSpeed * Time.deltaTime);
     }
 }

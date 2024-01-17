@@ -19,3 +19,4 @@ MonoBehaviour:
   Rarity: 2
   ItemPosition: {x: 2, y: 1, z: 0}
   ItemSprite: {fileID: 21300000, guid: 8e2f3a474b783bd478d5f0f90731614a, type: 3}
+  ItemScore: 15

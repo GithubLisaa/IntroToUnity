@@ -20,5 +20,6 @@ public class ItemData : ScriptableObject
     public ERarity Rarity = ERarity.Common; // ici on utilise l'enum défini plus haut pour définir la rareté de l'objet par défaut
     public Vector3 ItemPosition = new Vector3(0.0f, 0.0f, 0.0f); // décrit la position par defaut l'objet dans la scène (ici au centre du monde)
     public Sprite ItemSprite; // Un sprite 2D pour l'icone de l'objet
+    public int ItemScore = 0;
     //public Mesh ItemMeshFilter; // Un mesh 3D pour l'objet
 }
