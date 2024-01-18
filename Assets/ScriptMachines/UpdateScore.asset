@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Update
-      le score","summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[],"$version":"A"}}'
+      le score","summary":null,"pan":{"x":0.0,"y":90.0},"zoom":1.0,"elements":[{"argumentCount":0,"coroutine":false,"defaultValues":{"target":null,"name":{"$content":"","$type":"System.String"}},"position":{"x":-183.0,"y":13.0},"guid":"ebff42ca-1a80-4cb7-b902-534af2552db1","$version":"A","$type":"Unity.VisualScripting.CustomEvent","$id":"9"},{"specifyFallback":false,"kind":"Application","defaultValues":{"name":{"$content":"Gameplay::ItemPickup","$type":"System.String"}},"position":{"x":-455.0,"y":117.0},"guid":"294174ad-806a-46ca-8cf7-f758ffd0ead2","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"11"},{"sourceUnit":{"$ref":"11"},"sourceKey":"value","destinationUnit":{"$ref":"9"},"destinationKey":"name","guid":"9657a749-ab2a-4cea-ab1e-db9df71acdfe","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
     _objectReferences: []
